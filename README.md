@@ -1,2 +1,2 @@
 # react_learn
-learning advanced react
+React JS Advanced Learning
