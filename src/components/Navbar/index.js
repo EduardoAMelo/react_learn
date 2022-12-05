@@ -1,3 +1,4 @@
+import { Divider } from '@mui/material';
 import React from 'react';
 import {
 Nav,
@@ -7,6 +8,7 @@ NavMenu,
 NavMenuBackground,
 NavBtn,
 NavBtnLink,
+NavLinkBox,
 } from './NavbarElements';
 
 const Navbar = () => {
@@ -15,20 +17,31 @@ return (
 	<Nav>
         <NavMenuBackground>
             <NavMenu>
-                <NavLink to='/' activeStyle>
-                    HOME
-                </NavLink>
-                <NavLink to='/about' activeStyle>
-                    ABOUT
-                </NavLink>
-                <NavLink to='/contact' activeStyle>
-                    CONTACT
-                </NavLink>
-                <NavLink to='/Garanties' activeStyle>
-                    GARANTY
-                </NavLink>
-                {/* Second Nav */}
-                {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+                <Divider orientation="vertical" flexItem />
+                <NavLinkBox>
+                    <NavLink to='/' activeStyle>
+                        HOME
+                    </NavLink>
+                </NavLinkBox>
+                <Divider orientation="vertical" flexItem />
+                <NavLinkBox>
+                    <NavLink to='/about' activeStyle>
+                        ABOUT
+                    </NavLink>
+                </NavLinkBox>
+                <Divider orientation="vertical" flexItem />
+                <NavLinkBox>
+                    <NavLink to='/contact' activeStyle>
+                        CONTACT
+                    </NavLink>
+                </NavLinkBox>
+                <Divider orientation="vertical" flexItem />
+                <NavLinkBox>
+                    <NavLink to='/Garanties' activeStyle>
+                        GARANTY
+                    </NavLink>
+                </NavLinkBox>
+                <Divider orientation="vertical" flexItem />
             </NavMenu>
         </NavMenuBackground>
 	</Nav>

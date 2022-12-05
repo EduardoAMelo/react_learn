@@ -11,6 +11,24 @@ justify-content: space-between;
 margin: 0%;
 `;
 
+export const NavLinkBox = styled(Link)`
+color: #FFFFFF;
+display: flex;
+width: 16vw;
+align-items: center;
+justify-content: center;
+border-right: grey;
+border-left: grey;
+text-decoration: none;
+height: inherit;
+cursor: pointer;
+&:hover {
+	transition: all 0.2s ease-in-out;
+	background: #18644A;
+	color: #FFFFFF;
+}
+`;
+
 export const NavLink = styled(Link)`
 color: #FFFFFF;
 display: flex;
@@ -19,12 +37,9 @@ text-decoration: none;
 font-family: 'Roboto';
 font-size: small;
 font-weight: 500;
-padding: 0 1rem;
+padding: 2vh;
 height: 100%;
 cursor: pointer;
-&.active {
-	color: #000000;
-}
 `;
 
 export const Bars = styled(FaBars)`
@@ -47,7 +62,6 @@ align-self: flex-end;
 background: #258765;
 display: flex;
 justify-content: center;
-padding: 8px;
 width: 200%;
 @media screen and (max-width: 768px) {
 	display: none;
@@ -56,10 +70,11 @@ width: 200%;
 export const NavMenu = styled.div`
 display: flex;
 width: 80%;
+height: inherit;
 margin-left: auto;
 margin-right: auto;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 align-self: flex-end;
 // margin-right: -24px;
 /* Second Nav */
